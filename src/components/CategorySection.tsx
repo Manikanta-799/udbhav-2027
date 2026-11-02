@@ -49,7 +49,7 @@ const categoryTheme = {
 };
 
 export default function CategorySection() {
-  const [activeCategory, setActiveCategory] = useState<EventCategory | null>('sports'); // Sports expanded by default so games are immediately visible under that field!
+  const [activeCategory, setActiveCategory] = useState<EventCategory | null>(null); // Start closed by default - only opens when pressed!
   const sectionRefs = {
     sports: useRef<HTMLDivElement>(null),
     cultural: useRef<HTMLDivElement>(null),
